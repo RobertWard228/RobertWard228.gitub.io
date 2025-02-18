@@ -1,0 +1,694 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  /* Color Theme Swatches in RGBA */
+  /* .Agricultural-worker,-farmer-monitoring-plant-health-in-high-tech-greenhouse,-using-digital-data-analysis-for-modern-agricultural-innovations-and-modern-farming-that-uses-technology-for-future-of-food-1-rgba { color: rgba(2, 114, 114, 1); }
+  .Agricultural-worker,-farmer-monitoring-plant-health-in-high-tech-greenhouse,-using-digital-data-analysis-for-modern-agricultural-innovations-and-modern-farming-that-uses-technology-for-future-of-food-2-rgba { color: rgba(0, 38, 38, 1); }
+  .Agricultural-worker,-farmer-monitoring-plant-health-in-high-tech-greenhouse,-using-digital-data-analysis-for-modern-agricultural-innovations-and-modern-farming-that-uses-technology-for-future-of-food-3-rgba { color: rgba(69, 114, 2, 1); }
+  .Agricultural-worker,-farmer-monitoring-plant-health-in-high-tech-greenhouse,-using-digital-data-analysis-for-modern-agricultural-innovations-and-modern-farming-that-uses-technology-for-future-of-food-4-rgba { color: rgba(114, 165, 3, 1); }
+  -backgroundColor { color: rgba(242, 176, 55, 1); } */
+
+  /* Color Theme Swatches in RGBA */
+  /* color: rgba(2, 140, 115, 1);
+  color: rgba(2, 140, 76, 1);
+  color: rgba(189, 216, 91, 1);
+  color: rgba(242, 237, 213, 1);
+  color: rgba(165, 134, 41, 1); */
+
+  /* Color Theme Swatches in RGBA */
+  /* color: rgba(5, 80, 89, 1);
+  color: rgba(96, 140, 119, 1);
+  color: rgba(143, 191, 168, 1);
+  color: rgba(29, 89, 1, 1);
+  color: rgba(205, 216, 119, 1); */
+
+  /* Color Theme Swatches in RGBA */
+  /* .An-immersive-VR-rainforest-with-digital-wildlife-and-glowing-blue-green-waterfalls-1-rgba { color: rgba(1, 73, 89, 1); }
+  .An-immersive-VR-rainforest-with-digital-wildlife-and-glowing-blue-green-waterfalls-2-rgba { color: rgba(78, 216, 216, 1); }
+  .An-immersive-VR-rainforest-with-digital-wildlife-and-glowing-blue-green-waterfalls-3-rgba { color: rgba(72, 242, 225, 1); }
+  .An-immersive-VR-rainforest-with-digital-wildlife-and-glowing-blue-green-waterfalls-4-rgba { color: rgba(2, 38, 0, 1); }
+  .An-immersive-VR-rainforest-with-digital-wildlife-and-glowing-blue-green-waterfalls-5-rgba { color: rgba(87, 191, 84, 1); } */
+
+  /* Color Theme Swatches in RGBA */
+  --headerColor:rgb(10, 35, 38);
+  --hoverColor:rgb(198, 234, 233);
+  --sloganColor:rgb(0, 146, 151);
+  --sectionHeaderColor: rgb(13, 72, 74);;
+  --headerTextColor: rgb(28, 165, 175);
+  --textColor:rgb(58, 63, 63);
+  /* --backgroundColor: rgb(34, 41, 42); */
+
+    /* Color Theme Swatches in RGBA */
+    /* --headerColor:rgb(19, 207, 213);
+    --hoverColor:rgb(224, 255, 254);
+    --sloganColor:rgb(43, 221, 224);
+    --sectionHeaderColor: rgb(91, 215, 234);
+    --textColor:rgb(212, 226, 225);
+    --headerTextColor: rgb(3, 33, 33);
+    --backgroundColor: rgb(26, 33, 33); */
+
+  /* Color Theme Swatches in RGBA */
+  /* --headerColor:rgba(10, 33, 38, 1);
+  --hoverColor:rgb(198, 235, 240);
+  --sloganColor:rgba(37, 84, 89, 1);
+  --textColor: rgba(26, 165, 151, 1);
+  --backgroundColor: rgb(255, 255, 255); */
+}
+
+
+body {
+  /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+  font-family: "Lexend Exa", serif;
+  margin: 0;
+  background-color: var(--backgroundColor);
+  
+}
+/* Navigation Bar */
+
+header {
+  background-color: var(--headerColor);
+  /* background-color: rgb(71, 155, 113); */
+  /* background-color: #488c68ff; */
+  color: var(--headerTextColor);
+  /* rgb(24, 46, 35); */
+  position: sticky;
+  top: 0;
+  margin: 0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 10px rgb(16, 17, 17);
+}
+
+/* #tagline {
+  color: rgb(6, 12, 20);
+} */
+
+h1{
+  font-size: 2rem;
+  margin: 0;
+  /* padding: 5rem 0; */
+  /* color: #0d223fff; */
+}
+
+#tagline > p{
+  font-size: 1rem;
+  margin: 0;
+  /* color: #f7f7ecff; */
+}
+
+ nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row;
+  /* height:fit-content */
+  /* float: right; */
+  /* flex-flow: row; */
+}
+
+nav li {
+  /* float: right; */
+}
+
+nav li a {
+  display: block;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+.topmenu {
+  color: inherit;
+  font-weight:bold;
+  /* margin: 10px;
+  padding: 20px;
+  font-size: 20px; */
+  text-decoration:none;
+}
+
+.topmenu:hover {
+  color: var(--hoverColor);
+  /* color: lightgray; */
+  /* Add the styles here */
+}
+
+main{
+  margin: 0px 5rem;
+  color: var(--textColor);
+}
+
+main > section{
+  margin: 0 0;
+  padding-top: 7rem;
+}
+
+/* .topdiv {
+  float: right;
+  padding-right: 1cm;
+} */
+
+/* .profile_name {
+  float: left;
+  padding-left: 2cm;
+  color:whitesmoke;
+  font-size: 30px;
+} */
+
+/* .profile_name .contact_info {
+  font-size: 15px;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+} */
+
+/* Titles */
+
+h2 {
+  /* text-align: justify; */
+  font-size: 50px;
+  /* text-align: left; */
+  text-align: center;
+  color: var(--sectionHeaderColor);
+  margin: 0rem 0;
+  padding: 0rem 0;
+}
+
+.introduction {
+  text-align: justify;
+  font-size: 30px;
+  text-align: center;
+  float: left;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  animation-duration: 5s;
+  position: relative;
+}
+
+/* Used in the About Me sections */
+
+/* About Me */
+
+#about-me {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 2rem;
+  row-gap: 1rem;
+  /* justify-content:space-between; */
+  padding-top: 3rem;
+  align-items: center;
+}
+
+#about-me img {
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+}
+
+#about-me h1 {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  font-size: 65px;
+  margin-top: auto;
+  margin-bottom: 0;
+  /* width: 45rem; */
+  color: var(--sloganColor);
+  padding: 0rem 0;
+  /* color: #2a4a34ff; */
+}
+
+#about-me p {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  font-size: 18px;
+  /* width: 45rem; */
+  color: var(--textColor);
+  margin-top: 0cm;
+  margin-bottom: auto;
+}
+
+.profile_image {
+  width:100%;
+  height: auto;
+  /* height: fit-content; */
+  /* vertical-align: middle; */
+  margin: 5px;
+}
+
+/* Skills */
+
+#skills{
+  /* background-color: var(--headerColor); */
+}
+
+.all_skills {
+  list-style-type: none;
+  /* margin: 0; */
+  margin-top: 2rem;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  /* justify-content: center; */
+  justify-content: center;
+  gap: 3rem;
+}
+
+.skill {
+  /* border: 1px solid gray; */
+  display: block;
+  padding: 1rem;
+  border-radius: 6px;
+  text-align: center;
+  width: 2in;
+  font-size: 20px;
+  box-shadow: 0 3px 10px rgb(16, 17, 17);
+  /* box-shadow: 0 3px 10px gray; */
+}
+
+.skill img {
+  height: 35px;
+  align-items: center;
+}
+
+.skill-title {
+  align-items: center;
+  /* font-size: 20px; */
+  margin-block-start: 8px;
+  margin-block-end: 5px;
+  font-weight: bold;
+} 
+
+.skills p {
+  align-items: center;
+  font-size: 15px;
+  color: gray;
+  margin-block-start: 5px;
+  margin-block-end: 5px;
+} 
+
+.flex_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Work Experiences */
+
+.jobs hr {
+  border: 1px solid lightgray;
+  width: 75%;
+  margin: 1rem auto;
+  /* margin: 5px 0; */
+  /* margin-left: 5cm; */
+}
+
+.job-card {
+  display: grid;
+  grid-template-columns: max-content max-content minmax(max-content,1fr);
+  grid-template-rows:min-content min-content;
+  column-gap: 1rem;
+  align-items: baseline;
+  /* margin: 0 15px 15px 30px;
+  padding-bottom: 5px; */
+}
+
+
+.job-title {
+  font-size: 25px;
+  margin: 0;
+  margin-top: 1rem;
+  /* text-align: center; */
+  /* line-height:10px; */
+}
+
+.job-location {
+  /* text-align: center; */
+  /* line-height:10px */
+}
+
+.job-dates {
+  /* text-align: center; */
+  /* line-height: 10px; */
+  text-align: right;
+}
+
+.job-content {
+  grid-column: 1 / -1;
+  /* grid-row: 2 / 3; */
+}
+
+.job-card ul {
+  margin: 0;
+}
+.job-card li {
+  font-size: 20px;
+  margin: 1rem 0;
+}
+
+/* Contact Me */
+
+#contact-me {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+#contact-me h2 {
+  margin-bottom: 2rem;
+}
+#contact-sources {
+  /* text-align: center; */
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  column-gap: 4rem;
+  row-gap: 2rem;
+  flex-wrap: wrap;
+  /* justify-content: space-evenly; */
+}
+
+.contact-source {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-wrap: wrap;
+  margin: 0;
+  /* flex-direction: ; */
+}
+
+#linkedin-logo {
+  height: 40px;
+  margin: 0 1rem;
+}
+#email-logo {
+  height: 40px;
+  margin: 0 1rem;
+}
+
+/* .all_recommendations {
+  display: flex;
+  align-items: center;
+  margin-left: 1in;
+  flex-direction: row;
+  flex-flow: wrap;
+  padding: 20px;
+}
+
+.recommendation {
+  font-style: italic;
+  text-align: left;
+  width: 21.875rem;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--primary-shadow);
+  padding: 20px;
+  margin: 10px;
+  border:1px solid gray;
+  font-size: 18px;
+  height:150px
+}
+
+.recommendation span {
+  color: #7600bc;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+} */
+
+/* Scroll to Top Button */
+
+/* .iconbutton{
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  background-color: #7600bc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 3%;
+  bottom: 3%;
+  cursor: pointer;
+} */
+
+/* Form Pop-up */
+
+/* .popup {
+  width:400px;
+  background-color: #e8bcf0;
+  border-radius: 3mm;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  position: fixed;
+  padding: 30px;
+  visibility: hidden;
+} */
+
+/* .popup img {
+  padding-top: 20px;
+} */
+
+/* .popup button {
+  background-color: #fff;
+  border: 1px solid #7600bc;
+  color: #7600bc;
+  display: block;
+  border-radius: 6px;
+  text-align: center;
+  margin: 50px;
+  padding: 10px;
+  width: 2in;
+  font-size: 20px;
+  margin-left: 25%;
+} */
+
+/* .popup button:hover {
+  background-color: #fff;
+  border: 2px solid #7600bc;
+  color: #7600bc;
+  display: block;
+  font-weight: bolder;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 25%;
+} */
+
+/* Recommendation Form */
+
+/* input, textarea {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+  margin: 10px;  
+  width:100%;
+} */
+
+/* fieldset {
+  display: flexbox;
+  align-content: center;
+  justify-content: center;  
+  padding: 25px; 
+  margin-left: 50px; 
+  margin-right: 50px;   
+  border: thin solid white;
+  width: 50%;
+} */
+
+/* Footer */
+footer {
+  background-color: var(--headerColor);
+  /* background-color: rgb(71, 155, 113); */
+  /* background-color: #488c68ff; */
+  color: var(--headerTextColor);
+  text-align: center;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  box-shadow: 0 1px 10px rgb(16, 17, 17);
+}
+
+#attribution {
+  margin-top: 1rem;
+  font-size: smaller;
+  display: flex;
+  justify-content: center;
+  column-gap: 2rem;
+}
+
+/* Buttons */
+
+/* button {
+  background-color: #fff;
+  border: 1px solid #7600bc;
+  color: #7600bc;
+  display: block;
+  border-radius: 6px;
+  text-align: center;
+  margin: 50px;
+  padding: 10px;
+  width: 2in;
+  font-size: 20px;
+} */
+
+/* button:hover {
+  background-color: #7600bc;
+  border: 1px solid #7600bc;
+  color: #fff;
+  display: block;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+} */
+
+
+@media (max-width: 1000px) {
+  main{
+    margin: 0px 4rem;
+    color: var(--textColor);
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  /* About Me */
+
+  #about-me {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: max-content max-content;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    /* justify-content:space-between; */
+    padding-top: 3rem;
+    /* align-items: center; */
+  }
+
+  #about-me img {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin: auto 0;
+  }
+
+  #about-me h1 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    font-size: 65px;
+    margin: auto 0;
+    /* width: 45rem; */
+    color: var(--sloganColor);
+    /* padding: 0rem 0; */
+    /* color: #2a4a34ff; */
+  }
+
+  #about-me p {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    font-size: 18px;
+    /* width: 45rem; */
+    color: var(--textColor);
+    /* margin-top: 0cm;
+    margin-bottom: auto; */
+  }
+
+  .profile_image {
+    width:100%;
+    height: auto;
+    /* height: fit-content; */
+    /* vertical-align: middle; */
+    margin: 5px;
+  }
+
+/* Work experience */
+
+  .job-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    grid-template-rows:min-content min-content min-content;
+    column-gap: 1rem;
+    align-items: baseline;
+    /* margin: 0 15px 15px 30px;
+    padding-bottom: 5px; */
+  }
+
+  .job-title {
+    font-size: 25px;
+    grid-column: 1 / -1;
+    /* text-align: center; */
+    /* line-height:10px; */
+  }
+  .job-location {
+    /* text-align: center; */
+    /* line-height:10px */
+  }
+  
+  .job-dates {
+    /* text-align: center; */
+    /* line-height: 10px; */
+    text-align: right;
+  }
+  
+  .job-content {
+    grid-column: 1 / -1;
+    /* grid-row: 2 / 3; */
+  }
+  
+  .job-card ul {
+    margin: 0;
+  }
+  .job-card li {
+    font-size: 20px;
+    margin: 1rem 0;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .job-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:min-content min-content min-content;
+    column-gap: 1rem;
+    row-gap: 0.5rem;
+    align-items: baseline;
+    /* margin: 0 15px 15px 30px;
+    padding-bottom: 5px; */
+  }
+
+  .job-title {
+    font-size: 25px;
+    grid-column: 1 / -1;
+    text-align: center;
+    /* line-height:10px; */
+  }
+  .job-location {
+    text-align: center;
+    /* line-height:10px */
+  }
+  
+  .job-dates {
+    text-align: center;
+    /* line-height: 10px; */
+    /* text-align: right; */
+  }
+  
+  .job-content {
+    grid-column: 1 / -1;
+    /* grid-row: 2 / 3; */
+  }
+  
+  .job-card ul {
+    margin: 0;
+  }
+  .job-card li {
+    font-size: 20px;
+    margin: 1rem 0;
+  }
+}
