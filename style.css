@@ -211,6 +211,7 @@ main > section{
 
 .all_skills {
   list-style-type: none;
+  padding: 0 4rem;
   /* margin-top: 2rem; */
   display: flex;
   flex-direction: row;
@@ -438,6 +439,10 @@ footer {
     /* height: fit-content; */
     /* vertical-align: middle; */
     margin: 5px;
+  }
+
+  .all_skills {
+    padding: 0;
   }
 
 /* Work experience */
