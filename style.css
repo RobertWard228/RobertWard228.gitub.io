@@ -157,8 +157,8 @@ main > section{
   padding-top: 7rem;
 }
 
-/* About Me */
 
+/* About Me */
 #about-me {
   display: grid;
   grid-template-columns: 2fr 3fr;
@@ -201,7 +201,6 @@ main > section{
   height: auto;
   /* height: fit-content; */
   /* vertical-align: middle; */
-  margin: 5px;
 }
 
 /* Skills */
@@ -282,6 +281,7 @@ main > section{
 
 .no-image {
   width: auto;
+  margin-right: 2rem;
   margin-top: 5rem;
 }
 
@@ -453,6 +453,11 @@ footer {
     margin-top: 2rem;
     margin-bottom: 1rem;
     margin-left: 1rem;
+  }
+
+  .no-image {
+    width: auto;
+    margin-right: 0;
   }
 
   .job-location {
