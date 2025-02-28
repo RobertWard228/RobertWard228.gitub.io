@@ -2,12 +2,17 @@
 <html>
   <head>
     <title>Robert Ward - Portfolio</title>
-    <link rel="stylesheet" href="./style.css"/>
+    <!-- <link rel="stylesheet" href="./style.css"/> -->
+    <link rel="stylesheet" href="./styleTest.css"/>
     <script src="./script.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Signika:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Days+One&family=Exo:ital,wght@0,100..900;1,100..900&family=Maven+Pro:wght@400..900&display=swap" rel="stylesheet">
   </head>
   <body>
     <!-- Navigation Bar -->
@@ -18,8 +23,8 @@
       </section>
       <nav>
         <ul>
-          <li><a class="topmenu" href="#">About Me</a></li>
-          <li><a class="topmenu" href="#skills">Skills</a></li>
+          <li><a class="topmenu" href="#">Home</a></li>
+          <li><a class="topmenu" href="#about-me">About Me</a></li>
           <li><a class="topmenu" href="#jobs">Work Experience</a></li>
           <li><a class="topmenu" href="#contact-me">Contact Me</a></li>
         </ul>
@@ -27,7 +32,7 @@
     </header>
     <main>
       <!-- About Me -->
-      <section id="about-me">
+      <section id="hero">
             <p id="slogan">Hi! I'm<br>Robert Ward</p>
             <p id="intro-message">
               I am a versatile software engineer proficient in web development and some back-end technologies.
@@ -37,7 +42,7 @@
       </section>
                 
       <!-- Skills -->
-      <section id="skills">
+      <!-- <section id="skills">
         <h2>Skills</h2>
         <ul class="all_skills">
           <li class="skill-card">
@@ -66,6 +71,53 @@
               <p>2 years experience</p>
           </li>
           <li class="skill-card">
+            <img src="images/database.png"/>
+              <h3 class="skill-title">SQL</h3>
+              <p>1 year experience</p>
+          </li>
+        </ul>
+      </section> -->
+
+      <!-- about-me test -->
+      <section id="about-me">
+        <img id="profile-pic" src="./images/boy.png">
+        <p id="quick-bio">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+          Aspernatur, vitae soluta error inventore consectetur at quod temporibus eos dicta delectus doloribus nesciunt alias quis vel neque nobis, 
+          eligendi veritatis iure nostrum sint. Assumenda, excepturi cupiditate. 
+          Sapiente est eaque illo odio culpa obcaecati reprehenderit veniam praesentium, 
+          mollitia quas labore dolore natus?
+        </p>
+      </section>
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul class="all_skills">
+          <li class="skill-card l-card">
+            <img src="images/html5.png"/>
+            <h3 class="skill-title">HTML</h3>
+            <p>3 years experience</p>
+          </li>
+          <li class="skill-card r-card">
+            <img src="images/js.png"/>
+            <h3 class="skill-title">JavaScript</h3>
+            <p>2 years experience</p>
+          </li>
+          <li class="skill-card l-card">
+            <img src="images/css.svg"/>
+            <h3 class="skill-title">CSS</h3>
+            <p>3 years experience</p>
+          </li>
+          <li class="skill-card r-card">
+            <img src="images/python.png"/>
+              <h3 class="skill-title">Python</h3>
+              <p>3 years experience</p>
+          </li>
+          <li class="skill-card l-card">
+            <img src="images/java.png"/>
+              <h3 class="skill-title">Java</h3>
+              <p>2 years experience</p>
+          </li>
+          <li class="skill-card r-card">
             <img src="images/database.png"/>
               <h3 class="skill-title">SQL</h3>
               <p>1 year experience</p>
