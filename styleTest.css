@@ -1,14 +1,6 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 5rem;
-}
-
 :root {
+  /* navbar height offset*/
+  --navbar-offset: 6rem;
   /* Color Theme Swatches in RGBA */
   --headerColor:rgb(10, 35, 38);
   --headerTextColor: rgb(28, 165, 175);
@@ -21,6 +13,26 @@ html {
   --darkBackground: rgb(0, 47, 51);
   --darkMainText: rgb(57, 60, 60);
   --greyText: rgb(112, 112, 112);
+
+  /* font sizes */
+  --fs-xl: 7rem;
+  --fs-800: 3.5rem;
+  --fs-700: 2rem;
+  --fs-600: 1.75rem;
+  --fs-500: 1.4rem;
+  --fs-400: 1.2rem; /* main text size. */
+  --fs-300: 1rem;
+  --fs-200: 0.8rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--navbar-offset);
 }
 
 body {
@@ -30,30 +42,22 @@ body {
 
 /* Title Elements */
 h1{
-  font-size: 2rem;
+  font-size: var(--fs-700);
 }
 
 h2 {
-  font-size: 3.5rem;
+  font-size: var(--fs-800);
   text-align: center;
   color: var(--sectionHeaderColor);
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: var(--fs-600);
 }
 
 /* Text Elements */
-p {
-  font-size: 1.2rem;
-}
-
-li {
-  font-size: 1.2rem;
-}
-
-a {
-  font-size: 1.2rem;
+p, li, a {
+  font-size: var(--fs-400);
 }
 
 .light-hyperlink {
@@ -72,7 +76,6 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  /* min-height: 10vh; */
   padding: 0.5rem;
 
   display: flex;
@@ -88,10 +91,6 @@ header {
 
 #tagline {
   padding-left: 1rem;
-}
-
-#tagline > p{
-  font-size: 1rem;
 }
 
  nav ul {
@@ -119,8 +118,6 @@ nav li a {
 /* main */
 main{
   color: var(--darkMainText);
-
-  display: grid;
   /* grid-template-columns: 1fr 1fr; */
   /* grid-template-rows: repeat(auto); */
   /* row-gap: 0; */
@@ -128,9 +125,7 @@ main{
 }
 
 main > section{
-  padding: 2rem 5rem;
-  /* margin-bottom: 2rem; */
-  /* min-height: 100vh; */
+  padding: 2rem 2rem;
 }
 
 
@@ -147,44 +142,56 @@ main > section{
   padding-bottom: 0;
   min-height: 100vh;
 
+  text-align: center;
+
   display: flex;
   flex-direction: column;
-  align-items: right;
+}
+
+/* #small-hello {
+  margin-top: auto;
+  padding-top: var(--navbar-offset);
+  font-size: var(--fs-700);
+  font-weight: bold;
 }
 
 #slogan {
+
+  font-size: var(--fs-xl);
+  font-weight: bold;
+  color: var(--sloganColor);
+} */
+
+#slogan {
   margin-top: auto;
-  padding-top: 5rem;
-  text-align: right;
-  font-size: 5rem;
+  padding-top: var(--navbar-offset);
+
+  font-size: var(--fs-xl);
   font-weight: bold;
   color: var(--sloganColor);
 }
 
 #intro-message {
-  margin-top: 1rem;
-  margin-left: 30%;
   margin-bottom: auto;
 
-  text-align: right;
-  font-size: 1.4rem;
+  font-size: var(--fs-400);
   color: var(--darkMainText);
 }
 
 
 /* About Me */
 
-#profile-pic {
+#profile-img {
   display: block;
 
-  width: 50%;
+  width: 65%;
+  
   margin: 0 auto 2rem;
 }
 #quick-bio {
-  margin-top: 1rem;
 
   text-align: center;
-  font-size: 0.9rem;
+  font-size: var(--fs-300);
   line-height: 2rem;
   color: var(--greyText);
 }
@@ -240,7 +247,7 @@ main > section{
   margin-bottom: 0.4px;
 
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: var(--fs-400);
 } 
 
 /* .skill-card p {
@@ -252,13 +259,16 @@ main > section{
 /* Work Experiences */
 
 .job-card {
-  padding: 2rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 5rem;
+  /* padding: 2rem;
   margin-top: 7rem;
   margin-bottom: 2rem;
-  margin-left: 3rem;
+  margin-left: 3rem; */
 
-  width: 60%;
-  max-width: 60rem;
+  /* width: 60%;
+  max-width: 60rem; */
 
   background-color: var(--darkBackground);
   border-radius: 2rem;
@@ -273,8 +283,6 @@ main > section{
 } */
 
 .no-image {
-  width: auto;
-  margin-right: 2rem;
   margin-top: 5rem;
 }
 
@@ -282,12 +290,12 @@ main > section{
   float: right;
   position: relative;
 
-  width: 42%;
+  width: 50%;
 
   margin-top: 2rem;
   margin-bottom: 1rem;
   margin-left: 2rem;
-  margin-right: 0.5rem;
+  margin-right: -1rem;
 
   border-radius: 1.5rem;
   box-shadow: 0 2px 10px rgb(52, 52, 52);
@@ -300,19 +308,15 @@ main > section{
   box-shadow: 0 2px 12px rgb(52, 52, 52);
 }
 
-.job-title {
-  font-size: 1.75rem;
-}
-
 .job-location {
   display: inline;
-  font-size: 1rem;
+  font-size: var(--fs-300);
 }
 
 .job-dates {
   width: auto;
   float: right;
-  font-size: 1rem;
+  font-size: var(--fs-300);
 }
 
 .job-card ul {
@@ -364,6 +368,7 @@ footer {
   align-items: center;
   margin-top: 2rem;
   padding: 1rem;
+  width: auto;
 
   background-color: var(--headerColor);
   color: var(--headerTextColor);
@@ -377,26 +382,78 @@ footer {
   column-gap: 2rem;
 }
 #attribution p, #attribution a{
-  font-size: 0.8rem;
+  font-size: var(--fs-200);
 }
 
-@media screen and (min-width: 750px) {
+@media (min-width: 750px) {
+  :root {
+    /* navbar height offset*/
+    --navbar-offset: 5rem;
+  }
+
   main{
+    display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 2rem;
   }
 
   main > section{
     grid-column: 1 / -1;
+    padding: 2rem 5rem;
+  }
+
+  #hero {
+    text-align: right;
+  }
+
+  #intro-message {
+    margin-left: 30%;
   }
 
   #about-me{
     grid-column: 1 / 2;
     padding-right: 0;
   }
+
+  #profile-img {
+    width: 55%;
+  }
+
   #skills{
     grid-column: 2 / -1;
     padding-left: 0;
+  }
+
+  .job-card {
+    padding: 2rem;
+    margin-top: 7rem;
+    margin-bottom: 2rem;
+    margin-left: 3rem;
+
+    width: 60%;
+    max-width: 60rem;
+  }
+  .job-img {
+    width: 42%;
+  
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    margin-right: 0.5rem;
+  }
+}
+
+@media (max-width: 750px) {
+  :root {
+    /* font sizes */
+    --fs-xl: 5rem;
+    --fs-800: 2.5rem;
+    --fs-700: 2rem;
+    --fs-600: 1.75rem;
+    --fs-500: 1.4rem;
+    --fs-400: 1rem; /* main text size. */
+    --fs-300: 0.8rem;
+    --fs-200: 0.6rem;
   }
 }
 
