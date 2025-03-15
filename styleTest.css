@@ -1,6 +1,6 @@
 :root {
   /* navbar height offset*/
-  --navbar-offset: 6rem;
+  --navbar-offset: 4rem;
   /* Color Theme Swatches in RGBA */
   --headerColor:rgb(10, 35, 38);
   --headerTextColor: rgb(28, 165, 175);
@@ -101,24 +101,19 @@ header {
   position: absolute;
   top: 0;
   right: 0;
-  /* border: 1px solid red; */
   margin: 1rem;
-}
-
-.nav-toggle-label span,
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-  display: block;
-  background: white;
-  height: 2px;
-  width: 2em;
-  border-radius: 2px;
-  content: '';
 }
 
 nav {
   display: none;
-  /* display: block; */
+}
+
+.hamburger rect{
+  fill: var(--headerTextColor);
+}
+
+.nav-toggle:checked ~ .nav-toggle-label .hamburger rect{
+  fill: var(--headerTextHover);
 }
 
 .nav-toggle:checked ~ nav {
@@ -141,18 +136,15 @@ nav li a {
   text-decoration: none;
 }
 
-.topmenu:hover, .topmenu:focus {
+.topmenu:hover, .topmenu:focus{
   color: var(--headerTextHover);
 }
 
 
 /* main */
+
 main{
   color: var(--darkMainText);
-  /* grid-template-columns: 1fr 1fr; */
-  /* grid-template-rows: repeat(auto); */
-  /* row-gap: 0; */
-  /* column-gap: 2rem; */
 }
 
 main > section{
@@ -178,20 +170,6 @@ main > section{
   display: flex;
   flex-direction: column;
 }
-
-/* #small-hello {
-  margin-top: auto;
-  padding-top: var(--navbar-offset);
-  font-size: var(--fs-700);
-  font-weight: bold;
-}
-
-#slogan {
-
-  font-size: var(--fs-xl);
-  font-weight: bold;
-  color: var(--sloganColor);
-} */
 
 #slogan {
   margin-top: auto;
@@ -238,7 +216,7 @@ main > section{
 .skill-card {
   display: flex;
 
-  margin: 1.2rem 0;
+  margin: 1.2rem auto;
   padding: 0.5rem 1.5rem;
   width: max-content;
 
@@ -248,24 +226,6 @@ main > section{
   border-width: 3px;
   border-style: solid;
   border-radius: 30px;
-}
-
-/* making the cards staggered */
-.l-card {
-  margin-right: auto;
-  margin-left: 18%;
-}
-.r-card {
-  margin-right: 18%;
-  margin-left: auto;
-}
-.l-card.mid-card {
-  margin-top: 1rem;
-  margin-left: 10%;
-}
-.r-card.mid-card {
-  margin-top: 1rem;
-  margin-right: 10%;
 }
 
 .skill-card img {
@@ -281,37 +241,17 @@ main > section{
   font-size: var(--fs-400);
 } 
 
-/* .skill-card p {
-  color: var(--greyText);
-  font-size: 1rem;
-}  */
-
-
 /* Work Experiences */
 
 .job-card {
   padding: 1rem;
   margin-bottom: 2rem;
   margin-top: 5rem;
-  /* padding: 2rem;
-  margin-top: 7rem;
-  margin-bottom: 2rem;
-  margin-left: 3rem; */
-
-  /* width: 60%;
-  max-width: 60rem; */
 
   background-color: var(--darkBackground);
   border-radius: 2rem;
   color: var(--lightMainText);
-  /* box-shadow: 0 0px 10px rgb(0, 36, 41); */
-  /* transition: transform 500ms ease, box-shadow 500ms ease; */
 }
-
-/* .job-card:hover, .job-card:focus{
-  transform: scale(1.03);
-  box-shadow: 0 0px 15px rgb(0, 21, 24);
-} */
 
 .no-image {
   margin-top: 5rem;
@@ -359,7 +299,6 @@ main > section{
 
 /* Contact Me */
 #contact-me {
-  /* grid-column: 1 / -1; */
   margin-bottom: 2rem;
 
   text-align: center;
@@ -469,12 +408,34 @@ footer {
   }
 
   #profile-img {
-    width: 55%;
+    width: clamp(10rem, 55%, 21rem);
   }
 
   #skills{
     grid-column: 2 / -1;
     padding-left: 0;
+  }
+
+  .all_skills {
+    margin: auto auto;
+    margin-top: 3rem;
+    width: min(100%, 35rem);
+  }
+
+  /* making the cards staggered */
+  .l-card {
+    margin-left: 14%;
+  }
+  .r-card {
+    margin-right: 14%;
+  }
+  .l-card.mid-card {
+    margin-left: 0rem;
+    /* margin-right: auto; */
+  }
+  .r-card.mid-card {
+    /* margin-left: auto; */
+    margin-right: 0rem;
   }
 
   .job-card {
@@ -486,9 +447,12 @@ footer {
     width: 60%;
     max-width: 60rem;
   }
+  .no-image {
+    margin: 5rem auto 2rem;
+  }
   .job-img {
     width: 42%;
-  
+
     margin-top: 2rem;
     margin-bottom: 1rem;
     margin-left: 2rem;
@@ -509,63 +473,3 @@ footer {
     --fs-200: 0.6rem;
   }
 }
-
-/* Responsiveness */
-
-/* @media (max-width: 1200px) {
-  main{
-    margin: 0px 4rem;
-    color: var(--darkMainText);
-  }
-
-  h2 {
-    text-align: center;
-  }
-
-  .all_skills {
-    padding: 0;
-  }
-
-  .job-card {
-    width: 80%;
-    margin-bottom: 1rem;
-    margin-left: 0;
-  }
-
-  .job-img {
-    width: 45%;
-    margin-right: 0;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    margin-left: 1rem;
-  }
-
-  .no-image {
-    width: auto;
-    margin-right: 0;
-  }
-
-  .job-location {
-    display: block;
-  }
-  
-  .job-dates {
-    float: none;
-  }
-} */
-
-/* @media (max-width: 900px) {
-
-  h2 {
-    margin-bottom: 1rem;
-  }
-
-  .job-card {
-    width: auto;
-    margin-bottom: 1rem;
-  }
-
-  .job-img {
-    margin-top: 2rem;
-  }
-} */
