@@ -47,6 +47,7 @@ h1{
 
 h2 {
   font-size: var(--fs-800);
+  margin-bottom: 2rem;
   text-align: center;
   color: var(--sectionHeaderColor);
 }
@@ -246,7 +247,7 @@ main > section{
 .job-card {
   padding: 1rem;
   margin-bottom: 2rem;
-  margin-top: 5rem;
+  margin-top: 4rem;
 
   background-color: var(--darkBackground);
   border-radius: 2rem;
@@ -263,7 +264,6 @@ main > section{
 
   width: 50%;
 
-  margin-top: 2rem;
   margin-bottom: 1rem;
   margin-left: 2rem;
   margin-right: -1rem;
@@ -304,9 +304,7 @@ main > section{
   text-align: center;
 }
 
-#contact-me h2 {
-  margin-bottom: 2rem;
-}
+
 #contact-sources {
   margin: 1rem 0;
   display: flex;
@@ -394,6 +392,10 @@ footer {
     flex-flow: row;
   }
 
+  .nav-skill {
+    display: none;
+  }
+
   #hero {
     text-align: right;
   }
@@ -440,7 +442,7 @@ footer {
 
   .job-card {
     padding: 2rem;
-    margin-top: 7rem;
+    margin-top: 5rem;
     margin-bottom: 2rem;
     margin-left: 3rem;
 
@@ -453,8 +455,7 @@ footer {
   .job-img {
     width: 42%;
 
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     margin-left: 2rem;
     margin-right: 0.5rem;
   }
